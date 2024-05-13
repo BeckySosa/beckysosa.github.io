@@ -31,7 +31,7 @@ body{
     color: #ddd;
 }
 body{
-    background-image: url(../Web_2024/imagenes/fondo.jpg);
+    background-image: url(fondo.jpg);
     background-size: cover;
     min-height: 100vh;
 

@@ -1,17 +1,17 @@
 var imagenes = [
-
-    "..\\Web_2024\\imagenes\\MM4.jpeg",
-    "..\\Web_2024\\imagenes\\MM5.jpeg",
-    "..\\Web_2024\\imagenes\\MM6.jpeg",
-    "..\\Web_2024\\imagenes\\MM7.jpeg",
-    "..\\Web_2024\\imagenes\\MM8.jpeg",
-    "..\\Web_2024\\imagenes\\MM_10.jpeg",
-    "..\\Web_2024\\imagenes\\MM_11.jpeg",
-    "..\\Web_2024\\imagenes\\MM12.jpeg",
-    "..\\Web_2024\\imagenes\\MM13.jpeg",
-    "..\\Web_2024\\imagenes\\MM14.jpeg",
-    "..\\Web_2024\\imagenes\\MM1.jpeg",
-    "..\\Web_2024\\imagenes\\MM2.jpeg"
+ 
+    "imagenes/MM4.jpeg",
+    "imagenes/MM5.jpeg",
+    "imagenes/MM6.jpeg",
+    "imagenes/MM7.jpeg",
+    "imagenes/MM8.jpeg",
+    "imagenes/MM_10.jpeg",
+    "imagenes/MM_11.jpeg",
+    "imagenes/MM12.jpeg",
+    "imagenes/MM13.jpeg",
+    "imagenes/MM14.jpeg",
+    "imagenes/MM1.jpeg",
+    "imagenes/MM2.jpeg"
 
 
 ]
@@ -24,8 +24,10 @@ function cargarImagenes() {
     carruselImg.innerHTML = "";
    
     for (var i = index; i < index + 4; i++) {
-        var img = document.createElement("img");
+         var img = document.createElement("img");
+       
         img.src = imagenes[i];
+        img.alt="carrusel roto"+(i+1);
         carruselImg.appendChild(img);
     }
 }
