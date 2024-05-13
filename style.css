@@ -1,12 +1,84 @@
-.Principal{
-    font-size: 150rem;
-    color:rgb(226, 42, 42)
+body{
+    margin: 0;
+    padding: 0;
+}
+#div_encabezado{
+    background-color: #ff8000;
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div_encabezado h1 {
+    width: 80%;
+    height: 20%;
+    text-align: left;
+    color: #00ff;
+    font-size: 2em;
+    padding-left: 0%;
+}
+#botones_redes{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+#botones_redes button:hover{
+    color: #ddd;
+}
+body{
+    background-image: url(../Web_2024/imagenes/fondo.jpg);
+    background-size: cover;
+    min-height: 100vh;
+
 }
 
-h2{
-    color:blueviolet
 
-    font-size=120 rem;
-    padding-left: 20%;
-    b
+#carrusel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* Cambio a un valor más alto */
+    background: rgba(255, 255, 255, 0.5);
+    border: #ff8000;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#anteriorButton {
+    left: 10px; /* Ajustar a la izquierda */
+}
+
+#siguienteButton {
+    right: 10px; /* Ajustar a la derecha */
+}
+
+#carrusel {
+    position: relative;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    overflow-x: hidden;/* Oculta el desbordamiento horizontal */
+    height: 200px;
+}
+#carrusel_Imagenes {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+#contenedor-imagenes {
+    display: flex; /* Usa flexbox para alinear las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en filas */
+    
+}
+
+#carrusel img {
+    width: calc(25% - 2px); /* Ancho del 25% del contenedor menos el espacio entre las imágenes */
+    height: 200px; /* Establece la altura deseada para todas las imágenes */
+    object-fit: cover; 
+    margin: 1px;
+   
+     
 }
