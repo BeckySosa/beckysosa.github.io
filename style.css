@@ -31,7 +31,7 @@ body{
     color: #ddd;
 }
 body{
-    background-image: url(fondo.jpg);
+    background-image: url(../beckysosa.github.io/imagenes/fondo.jpg);
     background-size: cover;
     min-height: 100vh;
 
@@ -42,7 +42,7 @@ body{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 2; /* Cambio a un valor más alto */
+    z-index: 2; 
     background: rgba(255, 255, 255, 0.5);
     border: #ff8000;
     padding: 10px;
@@ -50,17 +50,17 @@ body{
 }
 
 #anteriorButton {
-    left: 10px; /* Ajustar a la izquierda */
+    left: 10px; 
 }
 
 #siguienteButton {
-    right: 10px; /* Ajustar a la derecha */
+    right: 10px; 
 }
 
 #carrusel {
     position: relative;
-    width: 100%; /* Ocupa todo el ancho disponible */
-    overflow-x: hidden;/* Oculta el desbordamiento horizontal */
+    width: 100%; 
+    overflow-x: hidden;
     height: 200px;
 }
 #carrusel_Imagenes {
@@ -69,16 +69,31 @@ body{
     display: flex;
 }
 #contenedor-imagenes {
-    display: flex; /* Usa flexbox para alinear las imágenes */
-    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en filas */
+    display: flex; 
+    flex-wrap: wrap; 
     
 }
 
 #carrusel img {
-    width: calc(25% - 2px); /* Ancho del 25% del contenedor menos el espacio entre las imágenes */
-    height: 200px; /* Establece la altura deseada para todas las imágenes */
+    width: calc(25% - 2px);
+    height: 200px; 
     object-fit: cover; 
     margin: 1px;
    
      
+}
+#institucional{
+    width: 50%;
+    height: 250px;
+    background-color: lightcoral;
+   /* background-image: url("..imagenes/ANGELITO_RECORTADO_PAINT.png");*/
+    float: left;
+}
+
+#memes{
+    width: 50%;
+    height: 250px;
+    background-color: lightblue;
+    /*background-image: url("..imagenes/DIABLITO_RECORTADO_PAINT.png");*/
+    float: right;
 }
